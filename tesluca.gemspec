@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # dependencies:
-  s.add_development_dependency "sinatra"
+  s.add_dependency "sinatra"
+  s.add_dependency "active_column"
 end

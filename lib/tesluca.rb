@@ -1,5 +1,10 @@
+require 'sinatra'
 require "tesluca/version"
 
 module Tesluca
-  # Your code goes here...
+  class App < Sinatra::Base
+    get "/" do
+      "ok" 
+    end
+  end
 end
