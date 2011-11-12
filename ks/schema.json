@@ -1,0 +1,77 @@
+{
+  "json_class": "CassandraThrift::KsDef",
+  "durable_writes": true,
+  "name": "tesluca_development",
+  "strategy_class": "org.apache.cassandra.locator.SimpleStrategy",
+  "strategy_options": {
+    "replication_factor": "1"
+  },
+  "replication_factor": 1,
+  "cf_defs": [
+    {
+      "json_class": "CassandraThrift::CfDef",
+      "column_type": "Standard",
+      "comparator_type": "org.apache.cassandra.db.marshal.LongType",
+      "row_cache_size": 0.0,
+      "key_cache_size": 200000.0,
+      "read_repair_chance": 1.0,
+      "keyspace": "tesluca_development",
+      "name": "schema_migrations",
+      "comment": "",
+      "column_metadata": [
+
+      ],
+      "gc_grace_seconds": 864000,
+      "default_validation_class": "org.apache.cassandra.db.marshal.BytesType",
+      "id": 1010,
+      "min_compaction_threshold": 4,
+      "max_compaction_threshold": 32,
+      "row_cache_save_period_in_seconds": 0,
+      "key_cache_save_period_in_seconds": 14400,
+      "replicate_on_write": true,
+      "merge_shards_chance": 0.1,
+      "key_validation_class": "org.apache.cassandra.db.marshal.BytesType",
+      "row_cache_provider": "org.apache.cassandra.cache.ConcurrentLinkedHashCacheProvider",
+      "key_alias": "KEY",
+      "compaction_strategy": "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy",
+      "compaction_strategy_options": {
+      },
+      "row_cache_keys_to_save": 2147483647,
+      "compression_options": {
+      }
+    },
+    {
+      "json_class": "CassandraThrift::CfDef",
+      "column_type": "Super",
+      "comparator_type": "org.apache.cassandra.db.marshal.BytesType",
+      "row_cache_size": 0.0,
+      "key_cache_size": 200000.0,
+      "read_repair_chance": 1.0,
+      "keyspace": "tesluca_development",
+      "name": "action_logs",
+      "comment": "Store user actions and platform events",
+      "column_metadata": [
+
+      ],
+      "gc_grace_seconds": 864000,
+      "default_validation_class": "org.apache.cassandra.db.marshal.BytesType",
+      "id": 1011,
+      "min_compaction_threshold": 4,
+      "max_compaction_threshold": 32,
+      "row_cache_save_period_in_seconds": 0,
+      "key_cache_save_period_in_seconds": 14400,
+      "replicate_on_write": true,
+      "merge_shards_chance": 0.1,
+      "key_validation_class": "org.apache.cassandra.db.marshal.BytesType",
+      "row_cache_provider": "org.apache.cassandra.cache.ConcurrentLinkedHashCacheProvider",
+      "key_alias": "KEY",
+      "compaction_strategy": "org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy",
+      "compaction_strategy_options": {
+      },
+      "row_cache_keys_to_save": 2147483647,
+      "compression_options": {
+      },
+      "subcomparator_type": "org.apache.cassandra.db.marshal.TimeUUIDType"
+    }
+  ]
+}

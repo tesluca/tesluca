@@ -20,5 +20,5 @@ Gem::Specification.new do |s|
 
   # dependencies:
   s.add_dependency "sinatra"
-  s.add_dependency "active_column"
+  s.add_dependency "active_column", "~> 0.2"
 end

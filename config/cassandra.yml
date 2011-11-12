@@ -1,0 +1,11 @@
+production:
+  servers: 127.0.0.1:9160
+  keyspace: tesluca_production 
+
+development:
+  servers: 127.0.0.1:9160
+  keyspace: tesluca_development 
+
+test:
+  servers: 127.0.0.1:9160
+  keyspace: tesluca_test 
