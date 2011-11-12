@@ -10,9 +10,8 @@ module Tesluca
   class App < Sinatra::Base
     ROOT_PATH = File.expand_path(File.dirname(__FILE__) + "/..")
     
-    def self.connect_to_cassandra(rack_env)
-      config = YAML.load_file(ROOT_PATH + "/config/cassandra.yml")[rack_env]
-      ActiveColumn.connect(config)
+    def connect_to_cassandra(rack_env)
+      @client = Cassandra.new('tesluca_test', '127.0.0.1:9160')
     end
     
     get "/" do

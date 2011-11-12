@@ -1,7 +1,7 @@
 Tesluca Roadmap
 ===========
 
-Currently pre-alpha.
+Currently way way alpha!
 
 Here's where Tesluca is headed:
 
